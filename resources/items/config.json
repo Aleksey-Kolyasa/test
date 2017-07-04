@@ -1,0 +1,45 @@
+{
+	"type": "Collection",
+	"properties": {
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "name",
+			"order": 0
+		},
+		"password": {
+			"name": "password",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "password",
+			"order": 1
+		},
+		"loginStatus": {
+			"name": "loginStatus",
+			"type": "boolean",
+			"typeLabel": "boolean",
+			"required": false,
+			"id": "loginStatus",
+			"order": 2
+		},
+		"loginDate": {
+			"name": "loginDate",
+			"type": "date",
+			"typeLabel": "date",
+			"required": false,
+			"id": "loginDate",
+			"order": 3
+		},
+		"registerDate": {
+			"name": "registerDate",
+			"type": "date",
+			"typeLabel": "date",
+			"required": false,
+			"id": "registerDate",
+			"order": 4
+		}
+	}
+}

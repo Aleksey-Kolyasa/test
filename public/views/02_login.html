@@ -1,0 +1,13 @@
+<div class="login-page col-xs-5 col-sm-5 col-md-5 col-lg-5" style="border:2px solid #C1C1C1; border-radius: 10px; margin-top: 20px; box-shadow: 5px 5px 10px #9E9E9E">
+	<h2>LOGIN</h2>
+	<div class="panel-body">
+		<div class="form-group">
+			<label>Name:</label>
+			<input type="text" class="form-control" ng-model="userAuthorization.userName">
+			<br>
+			<label>Password:</label>
+			<input type="password" class="form-control" ng-model="userAuthorization.userPassword">
+		</div>
+		<button class="btn btn-success" ng-click="userAuthorization.userLogin(userAuthorization.userName, userAuthorization.userPassword)">Login</button>
+	</div>
+</div>

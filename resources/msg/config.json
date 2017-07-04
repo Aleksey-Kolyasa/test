@@ -1,0 +1,37 @@
+{
+	"type": "Collection",
+	"properties": {
+		"msgSender": {
+			"name": "msgSender",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "msgSender",
+			"order": 0
+		},
+		"msgDate": {
+			"name": "msgDate",
+			"type": "date",
+			"typeLabel": "date",
+			"required": false,
+			"id": "msgDate",
+			"order": 1
+		},
+		"msgTo": {
+			"name": "msgTo",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "msgTo",
+			"order": 2
+		},
+		"msgText": {
+			"name": "msgText",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "msgText",
+			"order": 3
+		}
+	}
+}

@@ -1,0 +1,47 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Chat</title>
+	
+	<link rel="stylesheet" href="libs/css/angular-toastr.min.css">
+	<link rel="stylesheet" href="libs/css/bootstrap.css">
+	<link rel="stylesheet" href="libs/css/bootstrap-theme.css">
+	
+	<script data-main="js/main.js" src="libs/js/require.js"></script>
+	
+</head>
+<body>
+	<div class="container-fluid well" ng-controller="chatAppCtrl">
+		<!-- MENU *START*-->
+		<div class="register-page" ng-hide="currentView == 'chat'">
+			<h1 > Welcome to Chat </h1>
+			<div class="btn-group text-right">
+				<button class="btn btn-default" 
+					ng-click="view.changeView('register')" 
+					>Register
+				</button>
+				<button class="btn btn-default" 
+					ng-click="view.changeView('login')"
+					>Login
+				</button>
+			</div>
+			
+		</div>
+		<!-- MENU *END* -->
+
+		<!-- REGISTER PAGE *START*-->
+		<ng-include src="'views/01_register.html'" ng-show="currentView == 'register'"></ng-include>
+		<!-- REGISTER PAGE *END* -->
+
+		<!-- LOGIN PAGE *START*-->
+		<ng-include src="'views/02_login.html'" ng-show="currentView == 'login'"></ng-include>
+		<!-- LOGIN PAGE *END* -->
+		
+		<!-- CHAT PAGE *START*-->
+		<ng-include src="'views/03_chat.html'" ng-show="currentView == 'chat'"></ng-include>	
+		<!-- CHAT PAGE *END*-->
+
+
+	</div>
+</body>
+</html>
